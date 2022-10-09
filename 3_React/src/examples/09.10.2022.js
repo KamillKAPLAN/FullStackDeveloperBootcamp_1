@@ -153,3 +153,45 @@ console.log(filterES5);
 
 let filterES6 = phones.filter(phone => phone.price >= 5000);
 console.log(filterES6);
+
+/* ES6 This */
+const users = {
+    fullName: "Ceyda Güleryüz",
+    email: "ceydaguleryuz@gmail.com",
+    city: "İstanbul",
+    roles: ["A", "U"],
+
+    getRoles: function () {
+        console.log(this.fullName);
+        console.log(this.roles);
+
+        /* ES6 */
+        this.roles.forEach((item) => {
+            console.log(item);
+            console.log(this.fullName);
+        })
+
+        /* ES5 */
+        this.roles.forEach(function (item) {
+            console.log(item);
+        })
+    }
+};
+users.getRoles();
+
+let intArr = [1, 2, 3, 4, 5];
+let sum = 0;
+for (let i = 0; i < intArr.length; i++) {
+    sum += intArr[i];
+}
+console.log(sum);
+
+const addES5 = function (arr) {
+    console.log(arguments);
+    let total = 0;
+    arguments[0].map(function (e) {
+        total += e;
+    });
+    return total;
+}
+console.log(addES5(intArr));
