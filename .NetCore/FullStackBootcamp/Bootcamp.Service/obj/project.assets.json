@@ -1,0 +1,108 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Bootcamp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Bootcamp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bootcamp.Core.dll": {}
+        }
+      },
+      "Bootcamp.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Bootcamp.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Bootcamp.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bootcamp.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bootcamp.Core/1.0.0": {
+      "type": "project",
+      "path": "../Bootcamp.Core/Bootcamp.Core.csproj",
+      "msbuildProject": "../Bootcamp.Core/Bootcamp.Core.csproj"
+    },
+    "Bootcamp.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Bootcamp.Repository/Bootcamp.Repository.csproj",
+      "msbuildProject": "../Bootcamp.Repository/Bootcamp.Repository.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Bootcamp.Repository >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\KAMILKAPLAN\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\KAMILKAPLAN\\Desktop\\FullStackDeveloperBootcamps\\FullStackDeveloperBootcamp_1\\.NetCore\\FullStackBootcamp\\Bootcamp.Service\\Bootcamp.Service.csproj",
+      "projectName": "Bootcamp.Service",
+      "projectPath": "C:\\Users\\KAMILKAPLAN\\Desktop\\FullStackDeveloperBootcamps\\FullStackDeveloperBootcamp_1\\.NetCore\\FullStackBootcamp\\Bootcamp.Service\\Bootcamp.Service.csproj",
+      "packagesPath": "C:\\Users\\KAMILKAPLAN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KAMILKAPLAN\\Desktop\\FullStackDeveloperBootcamps\\FullStackDeveloperBootcamp_1\\.NetCore\\FullStackBootcamp\\Bootcamp.Service\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\KAMILKAPLAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\KAMILKAPLAN\\Desktop\\FullStackDeveloperBootcamps\\FullStackDeveloperBootcamp_1\\.NetCore\\FullStackBootcamp\\Bootcamp.Repository\\Bootcamp.Repository.csproj": {
+              "projectPath": "C:\\Users\\KAMILKAPLAN\\Desktop\\FullStackDeveloperBootcamps\\FullStackDeveloperBootcamp_1\\.NetCore\\FullStackBootcamp\\Bootcamp.Repository\\Bootcamp.Repository.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
