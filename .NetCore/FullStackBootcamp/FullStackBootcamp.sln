@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Core", "Bootcamp.Core\Bootcamp.Core.csproj", "{0AFD36E9-6DD0-4670-BA3A-CF9FE6957DCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.Core", "Bootcamp.Core\Bootcamp.Core.csproj", "{0AFD36E9-6DD0-4670-BA3A-CF9FE6957DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Repository", "Bootcamp.Repository\Bootcamp.Repository.csproj", "{16941C9E-ED1B-49E7-9A9A-8156953F0F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.Repository", "Bootcamp.Repository\Bootcamp.Repository.csproj", "{16941C9E-ED1B-49E7-9A9A-8156953F0F20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Service", "Bootcamp.Service\Bootcamp.Service.csproj", "{8B819B14-B6AE-4976-B168-9283167934F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.Service", "Bootcamp.Service\Bootcamp.Service.csproj", "{8B819B14-B6AE-4976-B168-9283167934F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.API", "Bootcamp.API\Bootcamp.API.csproj", "{CB03B3FD-1E74-4D8B-8E72-531113898C1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.API", "Bootcamp.API\Bootcamp.API.csproj", "{CB03B3FD-1E74-4D8B-8E72-531113898C1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

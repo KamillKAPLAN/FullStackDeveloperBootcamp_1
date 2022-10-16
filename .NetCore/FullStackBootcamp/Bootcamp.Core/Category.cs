@@ -1,7 +1,12 @@
-﻿namespace Bootcamp.Core
+﻿using System.Collections.Generic;
+
+namespace Bootcamp.Core
 {
     public class Category : BaseEntity
     {
-        /* 28 */
+        public int Name { get; set; }
+
+        /* navigation property */
+        public ICollection<Product> Products { get; set; }
     }
 }
