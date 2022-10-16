@@ -8,12 +8,12 @@
         /*[Key]
         public int ProductFeatureId { get; set; } */
         public int Id { get; set; }
-        public string? Color { get; set; }
+        public string Color { get; set; }
         public int Height { get; set; }
         public int Width { get; set; }
 
         /* ForeignKey */
         public int ProductId { get; set; }
-        public Product? Product { get; set; }
+        public Product Product { get; set; }
     }
 }
