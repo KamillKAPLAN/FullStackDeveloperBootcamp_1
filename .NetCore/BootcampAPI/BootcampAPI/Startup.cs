@@ -39,9 +39,10 @@ namespace BootcampAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BootcampAPI v1"));
+                
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BootcampAPI v1"));
 
             app.UseRouting();
 
@@ -52,7 +53,7 @@ namespace BootcampAPI
                 endpoints.MapControllers();
             });
 
-            app.UseCors(app => app.WithOrigins("http://localhost:8586/").AllowAnyHeader());
+            //app.UseCors(app => app.WithOrigins("http://localhost:8586/").AllowAnyHeader());
 
         }
     }
