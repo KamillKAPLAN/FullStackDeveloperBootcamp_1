@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 
 namespace CSharpExamples
@@ -9,10 +11,8 @@ namespace CSharpExamples
         static void Main(string[] args)
         {
             /*
-             Dapper
              .Net CORE API -EF
-             */
-            
-        }
+             */                      
+        }        
     }
 }

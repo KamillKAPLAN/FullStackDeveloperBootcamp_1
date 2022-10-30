@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootcampAPI", "BootcampAPI\BootcampAPI.csproj", "{5A17E209-D20A-4DD3-8EA4-5AA79552B85E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A17E209-D20A-4DD3-8EA4-5AA79552B85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A17E209-D20A-4DD3-8EA4-5AA79552B85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A17E209-D20A-4DD3-8EA4-5AA79552B85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A17E209-D20A-4DD3-8EA4-5AA79552B85E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EE52567-E01B-49C4-AA71-7B4E5A255CD0}
+	EndGlobalSection
+EndGlobal
