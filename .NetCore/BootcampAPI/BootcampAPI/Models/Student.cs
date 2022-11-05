@@ -21,5 +21,7 @@ namespace BootcampAPI.Models
         [ForeignKey("FK_GradeId")]
         public int GradeId { get; set; }
         public Grade Grade { get; set; }
+
+        public StudentAddress StudentAddress { get; set; }
     }
 }
