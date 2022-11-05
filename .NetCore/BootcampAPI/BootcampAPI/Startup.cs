@@ -33,6 +33,10 @@ namespace BootcampAPI
              * AddTransient
              */
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddCors(o =>
+            {
+                o.AddPolicy("AllowAll", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -55,7 +59,9 @@ namespace BootcampAPI
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
+            app.UseCors("AllowAll");
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -15,9 +15,9 @@ namespace BootcampAPI.Repository
                 .RuleFor(x => x.Department, x => x.Commerce.Department())
                 .RuleFor(x => x.Description, x => x.Commerce.ProductDescription())
                 .RuleFor(x => x.Price, x => x.Commerce.Price(5, 1000, 2).First())
-                .RuleFor(x => x.PictureUri, x => x.Commerce.Categories(1).First());
+                .RuleFor(x => x.PictureUri, x => x.Image.PicsumUrl());
 
-            return products.Generate(300);
+            return products.Generate(10);
         }
     }
 }
