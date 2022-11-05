@@ -11,5 +11,8 @@ namespace BootcampAPI.Models
         public int UpdatedBy { get; set; }
         public DateTime DeletedAt { get; set; }
         public bool IsDeleted { get; set; }
+
+        // public abstract void GetDate();
+        // abstract, virtual, interface, polymorphism, inheritance, encapsulation,
     }
 }

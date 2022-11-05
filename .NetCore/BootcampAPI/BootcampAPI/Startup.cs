@@ -1,4 +1,5 @@
 using BootcampAPI.Models;
+using BootcampAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -25,6 +26,13 @@ namespace BootcampAPI
             //{
             //    options.UseSqlServer(Configuration.GetConnectionString("DBFullStackContext"));
             //});
+
+            /*
+             * AddSingleton
+             * AddScoped
+             * AddTransient
+             */
+            services.AddTransient<IProductRepository, ProductRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
