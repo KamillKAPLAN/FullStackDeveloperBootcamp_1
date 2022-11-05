@@ -12,7 +12,8 @@ namespace BootcampAPI.Controllers
     public class MoviesController : ControllerBase
     {
         private readonly DBFullStackContext _dbContext;
-        public MoviesController(DBFullStackContext dbContext) => _dbContext = dbContext; /* DI */
+        //public MoviesController(DBFullStackContext dbContext) => _dbContext = dbContext; /* DI */
+        public MoviesController() => _dbContext = new DBFullStackContext(); 
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Movie>>> Get()
@@ -25,7 +26,9 @@ namespace BootcampAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Movie>> Get(int id)
         {
-            if (_dbContext.Movies == null || _dbContext.Movies.Any(x => x.Id != id))
+            var result = _dbContext.Movies.Any(x => x.Id == 3);
+            var ress = (_dbContext.Movies?.Any(e => e.Id != id)).GetValueOrDefault();
+            if (_dbContext.Movies == null || ress)
                 return NotFound();
             return await _dbContext.Movies.FindAsync(id);
         }
