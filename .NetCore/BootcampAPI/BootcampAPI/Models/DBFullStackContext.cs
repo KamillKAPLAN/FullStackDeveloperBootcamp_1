@@ -8,6 +8,8 @@ namespace BootcampAPI.Models
         //public DBFullStackContext(DbContextOptions<DBFullStackContext> options) : base(options) { }
 
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Grade> Grades { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
